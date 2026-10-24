@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="robots" content="noindex, nofollow">
-<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
-</head>
-<body>
-<title>2026 10월 후쿠오카트립</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
-<style id="app-css">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>2026 10월 후쿠오카트립</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap"><style id="app-css">
 /* Layout: a station nameplate for the title, one boarding-pass strip for flights and hotel, then each day drawn as a transit line. Stops sit on a colored route, Plan B/C branch off it. Day colors follow the Fukuoka subway: airport line red, Hakozaki orange, Nanakuma green. */
 :root{
   --bg:#EEF1F3; --surface:#FFFFFF; --ink:#1F2933; --muted:#566370; --line:#D3D9DF;
@@ -246,66 +234,7 @@ a.stop:active .ttl{text-decoration:underline}
   width:max-content; max-width:min(calc(100vw - 32px),420px); padding:12px 16px; border-radius:10px;
   background:var(--ink); color:var(--bg); font-size:15px; line-height:1.4; text-align:center;
 }
-</style>
-<div id="app"></div>
-<script type="application/json" id="state">
-{
-  "trip": {"title": "후쿠오카트립", "roman": "Fukuoka", "start": "2026-10-26", "dates": "2026.10.26 월 – 10.28 수", "nights": "2박 3일"},
-  "flights": [
-    {"from": "PUS", "to": "FUK", "d": "10.26 월", "no": "LJ517", "dep": "08:55", "arr": "09:55", "airline": "진에어", "fromName": "부산", "toName": "후쿠오카", "fromTerm": "국제선 터미널", "gate": "", "toTerm": "국제선 터미널"},
-    {"from": "FUK", "to": "PUS", "d": "10.28 수", "no": "LJ504", "dep": "12:00", "arr": "12:50", "airline": "진에어", "fromName": "후쿠오카", "toName": "부산", "fromTerm": "국제선 터미널", "gate": "", "toTerm": "국제선 터미널"}
-  ],
-  "hotel": {"name": "퀸테사호텔", "map": "https://www.google.com/maps/search/?api=1&query=Quintessa+Hotel+Fukuoka+Tenjin+Comic%26Books", "room": "스탠다드트윈", "checkin": "15:00", "checkout": "11:00"},
-  "packing": [
-    {"id": "p1", "text": "여권", "done": false},
-    {"id": "p2", "text": "항공권 (e-티켓)", "done": false},
-    {"id": "p3", "text": "Visit Japan Web 입국 QR", "done": false},
-    {"id": "p4", "text": "엔화 현금", "done": false},
-    {"id": "p5", "text": "해외결제 카드", "done": false},
-    {"id": "p6", "text": "휴대폰 충전기", "done": false},
-    {"id": "p7", "text": "보조배터리", "done": false},
-    {"id": "p8", "text": "돼지코 (일본 콘센트 어댑터)", "done": false},
-    {"id": "p9", "text": "상비약", "done": false},
-    {"id": "p10", "text": "세면도구", "done": false},
-    {"id": "p11", "text": "갈아입을 옷", "done": false}
-  ],
-  "days": [
-    {"id": "d1", "n": 1, "date": "2026-10-26", "label": "10/26 월", "refs": ["LJ517 08:55 출발", "체크인 15:00"], "items": [
-      {"id": "d1i1", "time": "05:00~06:00", "title": "기상 및 준비", "note": "웹캠세팅확인", "alts": []},
-      {"id": "d1i2", "time": "06:00~07:00", "title": "공항이동", "note": "", "alts": []},
-      {"id": "d1i3", "time": "07:00~08:55", "title": "보딩타임", "note": "", "alts": []},
-      {"id": "d1i4", "time": "08:55~10:30", "title": "비행및입국수속", "note": "", "alts": []},
-      {"id": "d1i5", "time": "10:30~11:00", "title": "텐진이동", "note": "지하철이동하자 공항선텐진역에서 가까움", "alts": []},
-      {"id": "d1i6", "time": "11:00~11:30", "title": "호텔이동", "note": "짐맡기기", "alts": []},
-      {"id": "d1i7", "time": "11:30~14:00", "title": "중식 및 자유시간", "note": "도산코", "alts": []},
-      {"id": "d1i8", "time": "14:00~14:30", "title": "마운자로구입", "note": "메디컬뷰티", "alts": []},
-      {"id": "d1i9", "time": "14:30~15:00", "title": "호텔체크인", "note": "", "alts": []},
-      {"id": "d1i10", "time": "15:00~17:00", "title": "휴식", "note": "", "alts": []},
-      {"id": "d1i11", "time": "", "title": "저녁", "note": "", "alts": []},
-      {"id": "d1i12", "time": "", "title": "저녁먹고 캐널시티 덕질", "note": "산리오 무지 ?", "alts": []}
-    ]},
-    {"id": "d2", "n": 2, "date": "2026-10-27", "label": "10/27 화", "refs": [], "items": [
-      {"id": "d2i1", "time": "", "title": "아침식사", "note": "키스이마루 ?", "alts": []},
-      {"id": "d2i2", "time": "", "title": "텐진주변쇼핑", "note": "텐치카 · 스탠다드프로덕트 · 이온몰", "alts": []},
-      {"id": "d2i3", "time": "", "title": "쇼핑한거 숙소에 내려두고 좀 쉬기", "note": "", "alts": []},
-      {"id": "d2i4", "time": "", "title": "하카타역으로 이동", "note": "", "alts": []},
-      {"id": "d2i5", "time": "", "title": "점심 스시시카바사시스", "note": "", "alts": [
-        {"id": "a-b1", "label": "B", "title": "아지후라이", "note": ""},
-        {"id": "a-c1", "label": "C", "title": "케이쇼우마츠모토", "note": ""}
-      ]},
-      {"id": "d2i6", "time": "", "title": "닌텐도스토어", "note": "", "alts": []},
-      {"id": "d2i7", "time": "", "title": "로피아쇼핑 및 저녁거리", "note": "", "alts": []},
-      {"id": "d2i8", "time": "", "title": "숙소복귀 저녁식사", "note": "", "alts": []},
-      {"id": "d2i9", "time": "", "title": "나카스밤산책+돈키털이", "note": "", "alts": []}
-    ]},
-    {"id": "d3", "n": 3, "date": "2026-10-28", "label": "10/28 수", "refs": ["체크아웃 11:00", "LJ504 12:00 출발"], "items": [
-      {"id": "d3i1", "time": "", "title": "아침", "note": "", "alts": []},
-      {"id": "d3i2", "time": "", "title": "비에데프랑스에서 시오메론빵사기", "note": "", "alts": []}
-    ]}
-  ]
-}
-</script>
-<script id="app-js">
+</style><div id="app"></div><script type="application/json" id="state">{"trip":{"title":"후쿠오카트립","roman":"Fukuoka","start":"2026-10-26","dates":"2026.10.26 월 – 10.28 수","nights":"2박 3일"},"flights":[{"from":"PUS","to":"FUK","d":"10.26 월","no":"LJ517","dep":"08:55","arr":"09:55","airline":"진에어","fromName":"부산","toName":"후쿠오카","fromTerm":"국제선 터미널","gate":"","toTerm":"국제선 터미널"},{"from":"FUK","to":"PUS","d":"10.28 수","no":"LJ504","dep":"12:00","arr":"12:50","airline":"진에어","fromName":"후쿠오카","toName":"부산","fromTerm":"국제선 터미널","gate":"","toTerm":"국제선 터미널"}],"hotel":{"name":"퀸테사호텔","map":"https://www.google.com/maps/search/?api=1&query=Quintessa+Hotel+Fukuoka+Tenjin+Comic%26Books","room":"스탠다드트윈","checkin":"15:00","checkout":"11:00"},"packing":[{"id":"p1","text":"여권","done":false},{"id":"p2","text":"항공권 (e-티켓)","done":false},{"id":"p3","text":"Visit Japan Web 입국 QR","done":false},{"id":"p4","text":"엔화 현금","done":false},{"id":"p5","text":"해외결제 카드","done":false},{"id":"p6","text":"휴대폰 충전기","done":false},{"id":"p8","text":"돼지코 (일본 콘센트 어댑터)","done":false},{"id":"p9","text":"상비약","done":false},{"id":"p10","text":"세면도구","done":false},{"id":"p11","text":"갈아입을 옷","done":false}],"days":[{"id":"d1","n":1,"date":"2026-10-26","label":"10/26 월","refs":["LJ517 08:55 출발","체크인 15:00"],"items":[{"id":"d1i1","time":"05:00~06:00","title":"기상 및 준비","note":"웹캠세팅확인, 방문잠그기(첫시터이유), 수전점검, 로청예약끄기, 시팅용품다시확인","alts":[],"map":"","memo":""},{"id":"d1i2","time":"06:00~07:00","title":"공항이동(택시)","note":"","alts":[],"map":"","memo":""},{"id":"d1i3","time":"07:00~08:55","title":"보딩타임(이심세팅확인)","note":"","alts":[],"map":"","memo":""},{"id":"d1i4","time":"08:55~10:30","title":"비행및입국수속","note":"","alts":[],"map":"","memo":""},{"id":"d1i5","time":"10:30~11:00","title":"텐진이동(비짓재팬QR코드점검)","note":"지하철이동하자 공항선텐진역에서 가까움","alts":[],"map":"","memo":""},{"id":"d1i6","time":"11:00~11:30","title":"호텔이동","note":"짐맡기기","alts":[]},{"id":"d1i7","time":"11:30~14:00","title":"중식 및 자유시간","note":"츠키시마몬자 후쿠오카원(11am~)","alts":[{"id":"amvmz9q7soqs","label":"B","title":"스시사카바사시스 원후쿠오카","note":"11am~","map":"https://maps.app.goo.gl/ADdrVXHReYXjhTSL7","memo":""},{"id":"amvmzb4tms4e","label":"C","title":"이나바쵸 잇케이","note":"11am~","map":"https://maps.app.goo.gl/FFuYJd7eNqhwwBDN9","memo":""}],"map":"https://maps.app.goo.gl/U4dueSK6jta7feJ46","memo":""},{"id":"d1i8","time":"14:00~14:30","title":"MOUNJARO","note":"MBC","alts":[],"map":"https://maps.app.goo.gl/yWhQbMtTg8xDV36W6","memo":""},{"id":"d1i9","time":"14:30~15:00","title":"호텔체크인","note":"15시부터 가능","alts":[],"map":"https://maps.app.goo.gl/TW3veSs2i3Lgjo6t9","memo":""},{"id":"d1i10","time":"15:00~17:00","title":"휴식","note":"","alts":[]},{"id":"d1i11","time":"17:00~18:00","title":"저녁식사 도상코","note":"날씨가 춥다면!!!(꼭 가자는 말아님)","alts":[{"id":"amvmzyxp6nl0","label":"B","title":"니노니 나카스카와바타점","note":"","map":"https://maps.app.goo.gl/SeyNDgNd2m2mzcCg7","memo":""},{"id":"amvn02rl9muo","label":"C","title":"마코토","note":"고등어구이(구글평점4.4)","map":"https://maps.app.goo.gl/4oFdAtYxSku7QJm28","memo":"텐진중앙공원쪽 (캐널시티가는 경로중에 있음)"},{"id":"amvn0e0kgz7q","label":"D","title":"우오덴","note":"","map":"https://maps.app.goo.gl/hVCRHG2F4ZWjfjo36","memo":"텐진중앙공원부근 (07:00~16:00)"}],"map":"https://maps.app.goo.gl/6x5mMxjqZk8ftWah9","memo":""},{"id":"d1i12","time":"","title":"저녁먹고 캐널시티 덕질","note":"산리오 무지 ?","alts":[]}]},{"id":"d2","n":2,"date":"2026-10-27","label":"10/27 화","refs":[],"items":[{"id":"d2i1","time":"08:00~09:00","title":"아침식사","note":"키스이마루","alts":[{"id":"amvn06ldxpbt","label":"B","title":"호텔조식","note":"","map":"","memo":"피곤하다면 편하게 먹기. 퀄이 괜찮다는 이야기가 제법 있음"}],"map":"https://maps.app.goo.gl/9aZmdv4QQFdxWWe8A","memo":"솔라리아 지하2층 (am07:30 오픈함)"},{"id":"d2i2","time":"","title":"텐진주변쇼핑","note":"","alts":[],"map":"","memo":"텐치카 · 스탠다드프로덕트 · 이온몰·유니클로몬치치자수후리스"},{"id":"d2i3","time":"","title":"쇼핑한거 숙소에 내려두고 좀 쉬기","note":"","alts":[]},{"id":"d2i4","time":"","title":"하카타역으로 이동","note":"","alts":[],"map":"","memo":"쇼핑을 제법 해야하니 쇼핑백 잘챙기기\n(이케아 빅백도)"},{"id":"d2i5","time":"","title":"점심 스시시카바사시스","note":"","alts":[{"id":"a-b1","label":"B","title":"산요쇼쿠도 하카타역 지하상가점","note":"아지후라이","map":"https://maps.app.goo.gl/guT6ySg3f3YdUNGV7","memo":""},{"id":"a-c1","label":"C","title":"케이쇼우마츠모토","note":"야끼도리레스토랑??","map":"https://maps.app.goo.gl/wP7ZQoD2bw6zKSRq9","memo":""}],"map":"https://maps.app.goo.gl/N44YMSKAccRn2skVA","memo":"영업시간 11:00~23:00"},{"id":"d2i6","time":"","title":"닌텐도스토어","note":"","alts":[]},{"id":"d2i7","time":"","title":"로피아쇼핑 및 저녁거리","note":"","alts":[]},{"id":"d2i8","time":"","title":"숙소복귀 저녁식사","note":"","alts":[]},{"id":"d2i9","time":"","title":"나카스밤산책+돈키털이","note":"","alts":[]}]},{"id":"d3","n":3,"date":"2026-10-28","label":"10/28 수","refs":["체크아웃 11:00","LJ504 12:00 출발"],"items":[{"id":"d3i1","time":"","title":"아침","note":"","alts":[],"map":"","memo":"12시출발비행기(10시부터 체크인)이고\n공항까지 전철&셔틀버스 타는 루트는 30분정도소요되므로\n09시에 지하철타는것이 여유있음"},{"id":"d3i2","time":"","title":"비에데프랑스에서 시오메론빵사기","note":"","alts":[],"map":"https://maps.app.goo.gl/6oLymqS3iu9Uv5kD7","memo":"후쿠오카 시내 다 폐점, 여기만 영업중이라고 확인됨.\n(07시 오픈)"},{"id":"nmvn0suyqrnt","time":"","title":"마지막쇼핑마무리?","note":"","map":"","memo":"텐치카, 마츠모토키요시, 칼디등","alts":[]}]}]}</script><script id="app-js">
 (function () {
   var TITLE = '2026 10월 후쿠오카트립';
   var FONTS = 'https://fonts.googleapis.com/css2?family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap';
@@ -932,7 +861,4 @@ a.stop:active .ttl{text-decoration:underline}
     }).catch(function () {});
   }
 })();
-</script>
-
-</body>
-</html>
+</script></body></html>
